@@ -1,0 +1,55 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Button1: TButton;
+    Edit3: TEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+    procedure Edit2Change(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+
+var
+  a,b, c: integer;
+
+begin
+
+  Edit3.Caption:= FloatToStr(Edit2 + Edit3);
+
+end;
+
+procedure TForm1.Edit1Change(Sender: TObject);
+begin
+  Currencytstring:= 'a';
+end;
+
+procedure TForm1.Edit2Change(Sender: TObject);
+begin
+  Currencytstring:= 'b';
+end;
+
+end.

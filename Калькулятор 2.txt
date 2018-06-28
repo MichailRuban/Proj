@@ -1,0 +1,7 @@
+begin
+  a:=strtofloat (edit1.Text);
+  b:=strtofloat (edit2.Text);
+  edit3.Text:= floattostr (a+b);
+end;
+
+end.
